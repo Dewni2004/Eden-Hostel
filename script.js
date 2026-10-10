@@ -96,13 +96,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const summaryTotal = document.getElementById('calcTotalPrice');
     const calcWhatsAppBtn = document.getElementById('calcWhatsAppBtn');
 
-    let currentRoomRate = 2000;
-    let currentRoomName = 'Single Bed';
+    let currentRoomRate = 25;
+    let currentRoomName = 'Private Driver Room';
 
     function updateCalculator() {
         const nights = parseInt(calcNightsSelect ? calcNightsSelect.value : '1', 10);
         const total = currentRoomRate * nights;
-        const formattedTotal = 'Rs. ' + total.toLocaleString();
+        const formattedTotal = '$' + total.toLocaleString();
 
         if (summaryRoom) summaryRoom.textContent = currentRoomName;
         if (summaryDuration) summaryDuration.textContent = nights === 1 ? '1 Night' : `${nights} Nights`;
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         calcWhatsAppBtn.addEventListener('click', () => {
             const nights = calcNightsSelect ? calcNightsSelect.value : '1';
             const vehicle = calcVehicleSelect ? calcVehicleSelect.value : 'KDH Van';
-            const total = summaryTotal ? summaryTotal.textContent : 'Rs. 2,000';
+            const total = summaryTotal ? summaryTotal.textContent : '$25';
 
             const message = `Hello Eden Hostel, I calculated my stay on your website:\n- Room Choice: ${currentRoomName}\n- Duration: ${nights} Night(s)\n- Vehicle: ${vehicle}\n- Estimated Rate: ${total}\n- Vehicle Parking: Included\n\nPlease reserve this for me.`;
             const encoded = encodeURIComponent(message);

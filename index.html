@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -172,10 +172,7 @@
                         <div class="booking-field">
                             <label for="quickRoomType">Room Choice</label>
                             <select id="quickRoomType" required>
-                                <option value="Driver Single Bed (Rs. 2,000)">Driver Single Bed (Rs. 2,000)</option>
-                                <option value="Private Driver Room (Rs. 4,500)">Private Driver Room (Rs. 4,500)</option>
-                                <option value="Twin Room Driver+Guide (Rs. 5,500)">Twin Room Driver+Guide (Rs. 5,500)
-                                </option>
+                                <option value="Private Driver Room ($25)">Private Driver Room ($25)</option>
                             </select>
                         </div>
                         <div class="booking-field">
@@ -301,36 +298,7 @@
                 </p>
 
                 <div class="rooms-grid">
-                    <!-- Room 1 -->
-                    <div class="room-card">
-                        <div class="room-header">
-                            <span class="room-tier">Budget Essential</span>
-                            <h3>Driver Single Bed</h3>
-                            <p class="room-sub">Single bunk/bed in a clean, quiet shared driver dormitory</p>
-                        </div>
-                        <div class="room-price">
-                            <span class="currency">Rs.</span>
-                            <span class="amount">2,000</span>
-                            <span class="period">/ night</span>
-                        </div>
-                        <ul class="room-features">
-                            <li><span>✓</span> Orthopedic single mattress & fresh linen</li>
-                            <li><span>✓</span> Individual power socket & reading light</li>
-                            <li><span>✓</span> 24/7 High-pressure hot water shower</li>
-                            <li><span>✓</span> Secure locked luggage area</li>
-                            <li><span>✓</span> Free KDH / Car parking in gated yard</li>
-                            <li><span>✓</span> High-speed fiber Wi-Fi</li>
-                            <li><span>✓</span> Morning Ceylon tea included</li>
-                        </ul>
-                        <div class="room-action">
-                            <a href="https://wa.me/94713160016?text=Hi%20Eden%20Hostel,%20I%20would%20like%20to%20reserve%20a%20Driver%20Single%20Bed%20(Rs.2000)."
-                                target="_blank" rel="noopener" class="btn btn-outline btn-block">
-                                Book Single Bed
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Room 2 (Popular) -->
+                    <!-- Private Driver Room (Popular) -->
                     <div class="room-card featured-room">
                         <div class="popular-ribbon">Most Popular</div>
                         <div class="room-header">
@@ -339,8 +307,8 @@
                             <p class="room-sub">Private room with double bed, quiet environment for deep rest</p>
                         </div>
                         <div class="room-price">
-                            <span class="currency">Rs.</span>
-                            <span class="amount">4,500</span>
+                            <span class="currency">$</span>
+                            <span class="amount">25</span>
                             <span class="period">/ night</span>
                         </div>
                         <ul class="room-features">
@@ -354,13 +322,12 @@
                             <li><span>✓</span> Morning Ceylon tea included</li>
                         </ul>
                         <div class="room-action">
-                            <a href="https://wa.me/94713160016?text=Hi%20Eden%20Hostel,%20I%20would%20like%20to%20reserve%20a%20Private%20Driver%20Room%20(Rs.4500)."
+                            <a href="https://wa.me/94713160016?text=Hi%20Eden%20Hostel,%20I%20would%20like%20to%20reserve%20a%20Private%20Driver%20Room%20($25)."
                                 target="_blank" rel="noopener" class="btn btn-primary btn-block">
                                 Book Private Room
                             </a>
                         </div>
                     </div>
-
                 </div>
 
 
@@ -534,17 +501,10 @@
                             <div class="form-group-calc">
                                 <label>Choose Room Option:</label>
                                 <div class="calc-options" id="calcRoomOptions">
-                                    <button type="button" class="calc-opt-btn active" data-rate="2000"
-                                        data-name="Single Bed">
-                                        Single Bed<br><small>Rs. 2,000 / night</small>
+                                    <button type="button" class="calc-opt-btn active" data-rate="25"
+                                        data-name="Private Driver Room">
+                                        Private Driver Room<br><small>$25 / night</small>
                                     </button>
-                                    <!--    <button type="button" class="calc-opt-btn" data-rate="4500"
-                                        data-name="Private Room">
-                                        Private Room<br><small>Rs. 4,500 / night</small>
-                                    </button>
-                                    <button type="button" class="calc-opt-btn" data-rate="5500" data-name="Twin Room">
-                                        Twin Room<br><small>Rs. 5,500 / night</small>
-                                    </button> -->
                                 </div>
                             </div>
 
@@ -573,7 +533,7 @@
                             <div class="calc-summary-card">
                                 <div class="summary-line">
                                     <span>Selected Room:</span>
-                                    <strong id="calcSummaryRoom">Single Bed</strong>
+                                    <strong id="calcSummaryRoom">Private Driver Room</strong>
                                 </div>
                                 <div class="summary-line">
                                     <span>Duration:</span>
@@ -586,7 +546,7 @@
                                 <hr class="summary-divider">
                                 <div class="summary-total">
                                     <span>Estimated Total:</span>
-                                    <span class="total-price" id="calcTotalPrice">Rs. 2,000</span>
+                                    <span class="total-price" id="calcTotalPrice">$25</span>
                                 </div>
                             </div>
 

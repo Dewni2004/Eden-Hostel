@@ -872,8 +872,8 @@ header.scrolled .logo img {
 
 /* Rooms & Rates */
 .rooms-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 2rem;
     margin-top: 1rem;
 }
@@ -889,6 +889,8 @@ header.scrolled .logo img {
     flex-direction: column;
     position: relative;
     text-align: left;
+    max-width: 480px;
+    width: 100%;
 }
 
 .room-card:hover {
