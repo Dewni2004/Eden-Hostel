@@ -976,7 +976,7 @@ header.scrolled .logo img {
 /* Rooms & Rates */
 .rooms-grid {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     gap: 2rem;
     margin-top: 1rem;
 }
@@ -984,20 +984,20 @@ header.scrolled .logo img {
 .room-card {
     background: #ffffff;
     border-radius: var(--radius-lg);
-    padding: 2.5rem 2rem;
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow-md);
     transition: var(--transition);
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
     position: relative;
     text-align: left;
-    max-width: 480px;
     width: 100%;
+    overflow: hidden;
 }
 
 .room-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
     border-color: var(--blue-500);
 }
@@ -1005,12 +1005,41 @@ header.scrolled .logo img {
 .featured-room {
     border: 2px solid var(--blue-600);
     box-shadow: 0 15px 35px rgba(37, 99, 235, 0.15);
-    background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
-    transform: scale(1.03);
 }
 
 .featured-room:hover {
-    transform: scale(1.03) translateY(-8px);
+    transform: translateY(-4px);
+}
+
+/* Left panel — header, price, CTA */
+.room-card .room-header {
+    padding: 2.5rem 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border-color);
+    background: linear-gradient(160deg, #f9fbff 0%, #ffffff 100%);
+}
+
+.featured-room .room-header {
+    background: linear-gradient(160deg, #eff6ff 0%, #f0f7ff 100%);
+}
+
+/* Right panel — features list */
+.room-card .room-features {
+    padding: 2.5rem 2.5rem;
+    margin-bottom: 0;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    justify-content: center;
+    background: #ffffff;
+}
+
+/* Push action button to bottom of left panel */
+.room-card .room-action {
+    margin-top: auto;
+    padding-top: 1.5rem;
 }
 
 .popular-ribbon {
@@ -1038,14 +1067,14 @@ header.scrolled .logo img {
 }
 
 .room-header h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-bottom: 0.5rem;
 }
 
 .room-sub {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-muted);
-    min-height: 44px;
+    line-height: 1.6;
 }
 
 .room-price {
@@ -1077,24 +1106,32 @@ header.scrolled .logo img {
 
 .room-features {
     list-style: none;
-    margin-bottom: 2.2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
-    flex-grow: 1;
+    gap: 0.75rem;
 }
 
 .room-features li {
-    font-size: 0.92rem;
+    font-size: 0.93rem;
     color: #334155;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    padding: 0.55rem 0.75rem;
+    border-radius: var(--radius-sm);
+    background: var(--bg-light);
+    transition: background 0.2s;
+}
+
+.room-features li:hover {
+    background: var(--blue-50);
 }
 
 .room-features li span {
     color: var(--blue-700);
     font-weight: 800;
+    font-size: 1rem;
+    flex-shrink: 0;
 }
 
 .special-rate-note {
@@ -2663,7 +2700,17 @@ footer {
 
     /* Rooms & Rates */
     .room-card {
-        padding: 2rem 1.4rem;
+        grid-template-columns: 1fr;
+    }
+
+    .room-card .room-header {
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 2rem 1.6rem 1.5rem;
+    }
+
+    .room-card .room-features {
+        padding: 1.5rem 1.6rem;
     }
 
     .room-header h3 {
