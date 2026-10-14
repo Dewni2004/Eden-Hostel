@@ -503,6 +503,23 @@ h2 {
     color: #e2e8f0;
 }
 
+.top-phone-box {
+    align-items: center;
+}
+
+.phone-name-col {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.15;
+}
+
+.phone-name-col .contact-person-name {
+    font-size: 0.72rem;
+    color: #94a3b8;
+    font-weight: 400;
+}
+
 .top-link:hover {
     color: var(--blue-500);
 }
@@ -510,6 +527,44 @@ h2 {
 .wa-top {
     color: #34d399;
     font-weight: 600;
+}
+
+/* Contact Person Sub-name (Shehan) under phone numbers */
+.contact-person-name {
+    display: block;
+    font-weight: 400 !important;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    line-height: 1.25;
+}
+
+.contact-text .contact-person-name {
+    font-size: 0.92rem;
+    color: #94a3b8;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.strip-item .contact-person-name {
+    font-size: 0.82rem;
+    color: #cbd5e1;
+    font-weight: 400;
+    margin-top: 1px;
+}
+
+.f-contact-entry {
+    margin-bottom: 0.6rem;
+}
+
+.f-contact-entry .f-contact-line {
+    margin-bottom: 0;
+}
+
+.f-contact-entry .contact-person-name {
+    font-size: 0.82rem;
+    color: #64748b;
+    font-weight: 400;
+    padding-left: 2px;
 }
 
 /* ==========================================================================
