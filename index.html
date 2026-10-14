@@ -182,6 +182,7 @@
                             <label for="quickRoomType">Room Choice</label>
                             <select id="quickRoomType" required>
                                 <option value="Private Driver Room ($25)">Private Driver Room ($25)</option>
+                                <option value="Twin Bed A/C Room ($25)">Twin Bed A/C Room ($25)</option>
                             </select>
                         </div>
                         <div class="booking-field">
@@ -307,10 +308,8 @@
                 </p>
 
                 <div class="rooms-grid">
-                    <!-- Private Driver Room (Popular) -->
+                    <!-- Card 1: Private Driver Room -->
                     <div class="room-card featured-room">
-
-                        <!-- Left Panel: info + price + CTA -->
                         <div class="room-header">
                             <span class="room-tier">Maximum Privacy</span>
                             <h3>Private Driver Room</h3>
@@ -320,10 +319,21 @@
                                 <span class="amount">25</span>
                                 <span class="period">/ night</span>
                             </div>
+                        </div>
+
+                        <div class="room-body">
                             <div class="room-preview-img">
                                 <img src="images/room.jpg" alt="Private Driver Room at Eden Airport Hostel Negombo"
                                     loading="lazy">
                             </div>
+                            <ul class="room-features">
+                                <li><span>✓</span> Comfortable double bed with premium sheets</li>
+                                <li><span>✓</span> Silent ceiling fan &amp; proper ventilation</li>
+                                <li><span>✓</span> Work desk &amp; clothes wardrobe</li>
+                                <li><span>✓</span> 24/7 Washroom access</li>
+                                <li><span>✓</span> Multiple multi-plug charging stations</li>
+                                <li><span>✓</span> Safe gated vehicle parking yard</li>
+                            </ul>
                             <div class="room-action">
                                 <a href="https://wa.me/94713160016?text=Hi%20Eden%20Hostel,%20I%20would%20like%20to%20reserve%20a%20Private%20Driver%20Room%20($25)."
                                     target="_blank" rel="noopener" class="btn btn-orange btn-block">
@@ -331,15 +341,41 @@
                                 </a>
                             </div>
                         </div>
-                        <!-- Right Panel: features list -->
-                        <ul class="room-features">
-                            <li><span>✓</span> Comfortable double bed with premium sheets</li>
-                            <li><span>✓</span> Silent ceiling fan &amp; proper ventilation</li>
-                            <li><span>✓</span> Work desk &amp; clothes wardrobe</li>
-                            <li><span>✓</span> 24/7 Washroom access</li>
-                            <li><span>✓</span> Multiple multi-plug charging stations</li>
-                            <li><span>✓</span> Safe parking yard</li>
-                        </ul>
+                    </div>
+
+                    <!-- Card 2: Twin Bed A/C Room -->
+                    <div class="room-card featured-room">
+                        <div class="room-header">
+                            <span class="room-tier">Two Beds &amp; A/C</span>
+                            <h3>Twin Bed A/C Room</h3>
+                            <p class="room-sub">Air-conditioned bedroom with two beds, ideal for paired drivers or crew</p>
+                            <div class="room-price">
+                                <span class="currency">$</span>
+                                <span class="amount">25</span>
+                                <span class="period">/ night</span>
+                            </div>
+                        </div>
+
+                        <div class="room-body">
+                            <div class="room-preview-img">
+                                <img src="images/ac-twin-room.jpg" alt="Twin Bed A/C Room at Eden Airport Hostel Negombo"
+                                    loading="lazy">
+                            </div>
+                            <ul class="room-features">
+                                <li><span>✓</span> Two comfortable separate beds with fresh linens</li>
+                                <li><span>✓</span> Powerful Air Conditioning (A/C)</li>
+                                <li><span>✓</span> Silent ceiling fan &amp; proper ventilation</li>
+                                <li><span>✓</span> Work desk &amp; clothes wardrobe</li>
+                                <li><span>✓</span> 24/7 Washroom access</li>
+                                <li><span>✓</span> Safe gated vehicle parking yard</li>
+                            </ul>
+                            <div class="room-action">
+                                <a href="https://wa.me/94713160016?text=Hi%20Eden%20Hostel,%20I%20would%20like%20to%20reserve%20a%20Twin%20Bed%20A/C%20Room%20($25)."
+                                    target="_blank" rel="noopener" class="btn btn-orange btn-block">
+                                    Book a Room
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -511,6 +547,10 @@
                                         data-name="Private Driver Room">
                                         Private Driver Room<br><small>$25 / night</small>
                                     </button>
+                                    <button type="button" class="calc-opt-btn" data-rate="25"
+                                        data-name="Twin Bed A/C Room">
+                                        Twin Bed A/C Room<br><small>$25 / night</small>
+                                    </button>
                                 </div>
                             </div>
 
@@ -600,7 +640,7 @@
                     </div>
 
                     <div class="gallery-item" data-category="rooms">
-                        <img src="images/twobeds.png" alt="Spacious twin AC bedroom with comfortable beds and storage">
+                        <img src="images/ac-twin-room.jpg" alt="Spacious twin AC bedroom with comfortable beds and storage">
                         <div class="gallery-overlay">
                             <h4>Twin Sharing AC Room</h4>
                             <p>Air-conditioned, comfortable beds & storage</p>
