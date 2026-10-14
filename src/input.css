@@ -320,40 +320,124 @@ h2 {
     text-align: center;
 }
 
-.btn-primary {
-    background: var(--gradient-blue);
+/* Booking.com Blue Button (Preserved exactly with signature Booking.com styling) */
+.btn-booking {
+    background: linear-gradient(135deg, #003580 0%, #006ce4 100%) !important;
     color: #ffffff !important;
-    box-shadow: var(--shadow-glow);
+    border: 2px solid transparent !important;
+    box-shadow: 0 4px 14px rgba(0, 53, 128, 0.28) !important;
 }
 
-.btn-primary:hover {
+.btn-booking:hover {
+    background: linear-gradient(135deg, #00224f 0%, #003580 100%) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0, 53, 128, 0.4) !important;
+}
+
+/* WhatsApp Green Button (Matches WhatsApp Floating Button) */
+.btn-whatsapp {
+    background-color: #25d366 !important;
+    background: linear-gradient(135deg, #25d366 0%, #20ba5a 100%) !important;
+    color: #ffffff !important;
+    border: 2px solid transparent !important;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35) !important;
+}
+
+.btn-whatsapp:hover {
+    background-color: #20ba5a !important;
+    background: linear-gradient(135deg, #20ba5a 0%, #16a34a 100%) !important;
+    color: #ffffff !important;
     transform: translateY(-3px);
-    box-shadow: 0 14px 28px rgba(37, 99, 235, 0.35);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5) !important;
+}
+
+.btn-whatsapp .whatsapp-btn-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Eden Logo Orange Button (Signature Warm Terracotta Accent) */
+.btn-orange,
+.btn-primary {
+    background: linear-gradient(135deg, #e4754d 0%, #da7049 50%, #c85e35 100%) !important;
+    color: #ffffff !important;
+    border: 2px solid transparent !important;
+    box-shadow: 0 8px 22px rgba(218, 112, 73, 0.32) !important;
+}
+
+.btn-orange:hover,
+.btn-primary:hover {
+    background: linear-gradient(135deg, #ea7e55 0%, #df764d 50%, #cf6339 100%) !important;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(218, 112, 73, 0.45) !important;
+    filter: brightness(1.04);
+}
+
+/* Eden Logo Dark Blue / Navy Button */
+.btn-navy,
+.btn-dark-blue {
+    background: linear-gradient(135deg, #002b66 0%, #003680 50%, #0a4496 100%) !important;
+    color: #ffffff !important;
+    border: 2px solid transparent !important;
+    box-shadow: 0 8px 20px rgba(0, 54, 128, 0.28) !important;
+}
+
+.btn-navy:hover,
+.btn-dark-blue:hover {
+    background: linear-gradient(135deg, #00224f 0%, #002b66 50%, #003680 100%) !important;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 26px rgba(0, 54, 128, 0.38) !important;
     filter: brightness(1.05);
 }
 
+/* Eden Logo White Button (Crisp White with Dark Blue border & text, Orange on hover) */
+.btn-white,
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.95);
-    color: var(--primary) !important;
-    border: 2px solid var(--border-color);
-    box-shadow: var(--shadow-sm);
+    background: #ffffff !important;
+    color: #003680 !important;
+    border: 2px solid #003680 !important;
+    box-shadow: 0 4px 14px rgba(0, 54, 128, 0.08) !important;
 }
 
+.btn-white:hover,
 .btn-secondary:hover {
-    background: var(--blue-50);
-    border-color: var(--blue-600);
-    color: var(--blue-700) !important;
+    background: #fff8f5 !important;
+    border-color: #da7049 !important;
+    color: #da7049 !important;
     transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(218, 112, 73, 0.16) !important;
+}
+
+/* Eden Logo White Button with Orange Border & Text */
+.btn-white-orange {
+    background: #ffffff !important;
+    color: #da7049 !important;
+    border: 2px solid #da7049 !important;
+    box-shadow: 0 4px 14px rgba(218, 112, 73, 0.1) !important;
+}
+
+.btn-white-orange:hover {
+    background: #da7049 !important;
+    color: #ffffff !important;
+    border-color: #da7049 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(218, 112, 73, 0.25) !important;
 }
 
 .btn-outline {
     background: transparent;
-    color: var(--blue-700);
-    border: 2px solid var(--blue-700);
+    color: #003680;
+    border: 2px solid #003680;
 }
 
 .btn-outline:hover {
-    background: var(--blue-700);
+    background: #003680;
     color: #ffffff;
     transform: translateY(-2px);
 }
@@ -1495,8 +1579,8 @@ header.scrolled .logo img {
 
 .filter-btn.active,
 .filter-btn:hover {
-    background: var(--blue-700);
-    border-color: var(--blue-700);
+    background: #003680;
+    border-color: #003680;
     color: #ffffff;
 }
 
@@ -2183,7 +2267,8 @@ footer {
 }
 
 .back-to-top:hover {
-    background: var(--blue-700);
+    background: #003680;
+    border-color: #003680;
     color: #ffffff;
     transform: translateY(-3px);
 }
